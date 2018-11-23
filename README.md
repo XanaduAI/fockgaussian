@@ -1,6 +1,6 @@
 
 
-# Fockgaussian
+#  Fockgaussian
 
 This repository contains the source code used to produce the results presented in *"A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians"* [arXiv:1811.](https://arxiv.org/abs/1811.).
 
