@@ -2,7 +2,7 @@
 
 #  Fockgaussian
 
-This repository contains the source code used to produce the results presented in *"A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians"* [arXiv:1811.](https://arxiv.org/abs/1811.).
+This repository contains the source code used to produce the results presented in *"A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians"* [arXiv:1811.09597](https://arxiv.org/abs/1811.09597).
 
 ## Contents
 
@@ -21,7 +21,7 @@ Nicolas Quesada
 
 If you are doing any research using this source code, please cite the following paper:
 
-> Nicolas Quesada.  "A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians" [arXiv:1811.](https://arxiv.org/abs/1811.)
+> Nicolas Quesada.  "A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians" [arXiv:1811.09597](https://arxiv.org/abs/1811.09597)
 
 ## License
 
