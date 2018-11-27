@@ -83,7 +83,7 @@ def matelem(l, m, n, U, Up, ls, alpha):
     prefns = np.sqrt(np.prod(np.array([np.math.factorial(i) for i in p])))
     T = np.exp(pref)/(prefns*np.sqrt(np.prod(np.cosh(lt))))
 
-    # Calculating the multiser S_p
+    # Calculating the multiset S_p
     sp = []
     for k, pval in enumerate(p):
         for i in range(pval):
