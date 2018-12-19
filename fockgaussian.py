@@ -83,7 +83,7 @@ def matelem(l, m, n, U, Up, ls, alpha):
     prefns = np.sqrt(np.prod(np.array([np.math.factorial(i) for i in p])))
     T = np.exp(pref)/(prefns*np.sqrt(np.prod(np.cosh(lt))))
 
-    # Calculating the multiser S_p
+    # Calculating the multiset S_p
     sp = []
     for k, pval in enumerate(p):
         for i in range(pval):
@@ -97,7 +97,6 @@ def matelem(l, m, n, U, Up, ls, alpha):
 
     # Calculate Bt
     Bt = Bp-np.diag(np.diag(Bp))+np.diag(zetap)
-
 
     if Bt.shape == (0, 0):
         amp = 1.0
