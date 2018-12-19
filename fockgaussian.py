@@ -98,9 +98,6 @@ def matelem(l, m, n, U, Up, ls, alpha):
     # Calculate Bt
     Bt = Bp-np.diag(np.diag(Bp))+np.diag(zetap)
 
-    if sum(p) % 2 != 0:
-        Bt = np.pad(Bt, pad_width=((0, 1), (0, 1)), mode='constant')
-        Bt[-1, -1] = 1.0
 
     if Bt.shape == (0, 0):
         amp = 1.0
