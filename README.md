@@ -2,7 +2,9 @@
 
 #  Fockgaussian
 
-This repository contains the source code used to produce the results presented in *"A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians"* [arXiv:1811.09597](https://arxiv.org/abs/1811.09597).
+This repository contains the source code used to produce the results presented in *"
+Franck-Condon factors by counting perfect matchings of graphs with loops
+"* [J. Chem. Phys. 150, 164113 (2019)](https://aip.scitation.org/doi/10.1063/1.5086387).
 
 ## Contents
 
@@ -13,7 +15,7 @@ This repository contains:
 
 ## Requirements
 
-The functions in fockgaussian and the jupyter notebook examples require [strawberryfields](https://github.com/XanaduAI/strawberryfields) and the [hafnian](https://github.com/XanaduAI/hafnian) library.
+The functions in fockgaussian and the jupyter notebook examples require [strawberryfields](https://github.com/XanaduAI/strawberryfields) (Release 0.9) and the [hafnian](https://github.com/XanaduAI/hafnian)  (Release 0.1.2)library (Release ).
 
 ## Author
 
@@ -21,7 +23,9 @@ Nicolas Quesada
 
 If you are doing any research using this source code, please cite the following paper:
 
-> Nicolas Quesada.  "A faster calculation of  Franck-Condon factors and Fock matrix elements of Gaussian unitaries using loop hafnians" [arXiv:1811.09597](https://arxiv.org/abs/1811.09597)
+> Nicolas Quesada.  *"
+Franck-Condon factors by counting perfect matchings of graphs with loops
+"* [J. Chem. Phys. 150, 164113 (2019)](https://aip.scitation.org/doi/10.1063/1.5086387).
 
 ## License
 
