@@ -15,7 +15,7 @@ This repository contains:
 
 ## Requirements
 
-The functions in fockgaussian and the jupyter notebook examples require [strawberryfields](https://github.com/XanaduAI/strawberryfields) (Release 0.9) and the [hafnian](https://github.com/XanaduAI/hafnian) library (Release 0.1.2).
+The functions in fockgaussian and the jupyter notebook examples require [Strawberry Fields](https://github.com/XanaduAI/strawberryfields) and the [The Walrus](https://github.com/XanaduAI/hafnian) library.
 
 ## Author
 
