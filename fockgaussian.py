@@ -1,6 +1,6 @@
 import strawberryfields.backends.gaussianbackend.gaussiancircuit as gc
 from strawberryfields.decompositions import takagi
-import hafnian as haf
+from thewalrus import hafnian
 import numpy as np
 
 
@@ -9,11 +9,10 @@ def tmsq(state, i, j, r):
     by amount r between modes i and j using the decomposition of this operation
     in terms of beamsplitters and (single mode) squeezers.
 
-    Args: 
-
-    state (gaussiancircuit): A gaussiancircuit object
-    i,j (integers): The two modes in which to apply the squeezing operation
-    r (real): Squeezing parameter
+    Args:
+    	state (gaussiancircuit): A gaussiancircuit object
+    	i,j (integers): The two modes in which to apply the squeezing operation
+    	r (real): Squeezing parameter
     """
     state.beamsplitter(np.pi/4, 0, i, j)
     state.squeeze(-r, 0, i)
@@ -26,12 +25,11 @@ def matelem(l, m, n, U, Up, ls, alpha):
     unitary W specified by alpha, U, ls, Up.
 
     Args:
-
-    l (integer): Number of modes
-    m,n : Lists of integers of length l
-    U, Up: Unitary matrices (square numpy arrays) of length l
-    ls: Array of real floats specifying the squeezing parameters
-    alpha: Array of complex floats specifying the displacements
+    	l (integer): Number of modes
+    	m,n : Lists of integers of length l
+    	U, Up: Unitary matrices (square numpy arrays) of length l
+    	ls: Array of real floats specifying the squeezing parameters
+    	alpha: Array of complex floats specifying the displacements
     """
     assert l == len(m)
     assert l == len(n)
@@ -50,7 +48,7 @@ def matelem(l, m, n, U, Up, ls, alpha):
 
     # Now we generate the circuit in Fig 4.(b)
     nmodes = 2*l
-    state = gc.GaussianModes(nmodes, hbar=2)
+    state = gc.GaussianModes(nmodes)
     for i, t in enumerate(ts):
         tmsq(state, i, i+l, -t)
 
@@ -101,7 +99,7 @@ def matelem(l, m, n, U, Up, ls, alpha):
     if Bt.shape == (0, 0):
         amp = 1.0
     else:
-        amp = haf.haf_complex(Bt, loop=True)
+        amp = hafnian(Bt, loop=True)
 
     mu = R*T*amp
 
