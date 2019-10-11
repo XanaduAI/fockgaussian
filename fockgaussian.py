@@ -69,12 +69,12 @@ def matelem(l, m, n, U, Up, ls, alpha):
     for i, t in enumerate(ts):
         tmsq(state, i, i + l, -t)
 
-    state.apply_u(Uep.conj())
+    state.apply_u(Uep)
 
     for i, lval in enumerate(ls):
         state.squeeze(-lval, 0, i)
 
-    state.apply_u(Ue.conj())
+    state.apply_u(Ue)
 
     # Shortcircuited Bloch-Messiah using Takagi
     Mt = state.mmat
