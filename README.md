@@ -10,12 +10,12 @@ Franck-Condon factors by counting perfect matchings of graphs with loops
 
 This repository contains:
 
-* A short python library, *fockgaussian* that given the inputs specifying a Gaussian unitary and the photon numbers of the input and output kets calculates the associated probability amplitude using the loop hafnian function of the `hafnian` library.
-* A jupyter notebook with examples of the usage of the library and a comparison against the same calculation using the Fock backend of `strawberryfields`
+* A short python library, *fockgaussian* that given the inputs specifying a Gaussian unitary and the photon numbers of the input and output kets calculates the associated probability amplitude using the loop hafnian function of the [The Walrus](https://github.com/XanaduAI/thewalrus).
+* A jupyter notebook with examples of the usage of the library and a comparison against the same calculation using the Fock backend of [Strawberry Fields](https://github.com/XanaduAI/strawberryfields).
 
 ## Requirements
 
-The functions in fockgaussian and the jupyter notebook examples require [Strawberry Fields](https://github.com/XanaduAI/strawberryfields) and the [The Walrus](https://github.com/XanaduAI/hafnian) library.
+The functions in fockgaussian and the jupyter notebook examples require [Strawberry Fields](https://github.com/XanaduAI/strawberryfields) and the [The Walrus](https://github.com/XanaduAI/thewalrus) library.
 
 ## Author
 
