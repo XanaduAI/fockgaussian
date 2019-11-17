@@ -110,12 +110,12 @@ def matelem(l, m, n, U, Up, ls, alpha):
     zetap = zeta[sp]
 
     # Calculate Bt
-    Bt = Bp - np.diag(np.diag(Bp)) + np.diag(zetap)
+    np.fill_diagonal(Bp, zetap)
 
-    if Bt.shape == (0, 0):
+    if Bp.shape == (0, 0):
         amp = 1.0
     else:
-        amp = hafnian(Bt, loop=True)
+        amp = hafnian(Bp, loop=True)
 
     mu = R * T * amp
 
